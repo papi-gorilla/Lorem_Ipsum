@@ -58,7 +58,7 @@ header {
   padding-top: 10px;
 }
 
-/* ポートフォリオ */
+/* Portfolio */
 .pf {
   background-color: #eceff1;
 }
@@ -119,4 +119,60 @@ header {
 }
 .pf-img:nth-child(6) {
   background-image: url(img/webcamp-mother.png);
+}
+
+/* Feature */
+.f-content {
+  width: 980px;
+  margin: 0 auto;
+  padding-bottom: 90px;
+}
+.f-title {
+  font-size: 32px;
+  color: #000000;
+  padding-top: 90px;
+  text-align: center;
+}
+.f-title::after {
+  content: "";
+  background-color: #ec715f;
+  height: 3px;
+  width: 70px;
+  margin: 8px auto 0 auto;
+  display: block;
+}
+.f-text {
+  padding: 30px 0;
+  text-align: center;
+  font-size: 16px;
+  color: #000000;
+}
+.f-str-box {
+  width: 980px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.f-str {
+  width: 320px;
+}
+.f-str:nth-child(2) {
+  margin: 0 10px;
+}
+.f-str-head {
+  text-align: center;
+}
+.fa {
+  width: auto;
+  font-size: 60px;
+  display: inline-block;
+}
+.f-str h3 {
+  font-size: 20px;
+  color: #000000;
+  margin: 10px 0;
+}
+.f-str p {
+  font-size: 16px;
+  color: #000000;
 }
