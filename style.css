@@ -7,6 +7,34 @@
 a {
   text-decoration: none;
 }
+h3 {
+  font-size: 20px;
+  color: #000000;
+}
+p {
+  font-size: 16px;
+  color: #000000;
+}
+.content-title {
+  font-size: 32px;
+  color: #000000;
+  padding-top: 90px;
+  text-align: center;
+}
+.content-title::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 3px;
+  background-color: #ec715f;
+  margin: 8px auto 0 auto;
+}
+.content-text {
+  font-size: 16px;
+  padding: 30px 0;
+  color: #000000;
+  text-align: center;
+}
 
 /* ヘッダー */
 header {
@@ -19,7 +47,7 @@ header {
   display: flex;
   justify-content: space-between;
 }
-.logo {
+.title-logo {
   width: auto;
   height: auto;
   max-width: 100%;
@@ -59,33 +87,13 @@ header {
 }
 
 /* Portfolio */
-.pf {
+.portfolio {
   background-color: #eceff1;
 }
-.pf-content {
+.pf-box {
   width: 920px;
   padding-bottom: 90px;
   margin: 0 auto;
-}
-.pf-title {
-  font-size: 32px;
-  color: #000000;
-  padding-top: 90px;
-  text-align: center;
-}
-.pf-title::after {
-  content: "";
-  display: block;
-  width: 70px;
-  height: 3px;
-  background-color: #ec715f;
-  margin: 8px auto 0 auto;
-}
-.pf-text {
-  font-size: 16px;
-  padding: 30px 0;
-  color: #000000;
-  text-align: center;
 }
 .pf-img-box {
   width: auto;
@@ -122,57 +130,93 @@ header {
 }
 
 /* Feature */
-.f-content {
+.f-box {
   width: 980px;
   margin: 0 auto;
   padding-bottom: 90px;
 }
-.f-title {
-  font-size: 32px;
-  color: #000000;
-  padding-top: 90px;
-  text-align: center;
-}
-.f-title::after {
-  content: "";
-  background-color: #ec715f;
-  height: 3px;
-  width: 70px;
-  margin: 8px auto 0 auto;
-  display: block;
-}
-.f-text {
-  padding: 30px 0;
-  text-align: center;
-  font-size: 16px;
-  color: #000000;
-}
-.f-str-box {
+.strength-box {
   width: 980px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
 }
-.f-str {
+.strength {
   width: 320px;
 }
-.f-str:nth-child(2) {
+.strength:nth-child(2) {
   margin: 0 10px;
 }
-.f-str-head {
+.strength-head {
   text-align: center;
 }
-.fa {
+.strength-icon {
   width: auto;
   font-size: 60px;
   display: inline-block;
 }
-.f-str h3 {
-  font-size: 20px;
-  color: #000000;
+.strength h3 {
   margin: 10px 0;
 }
-.f-str p {
-  font-size: 16px;
-  color: #000000;
+
+/* Profile */
+.profile {
+  background-color: #eceff1;
+}
+.profile-box {
+  width: 1024px;
+  margin: 0 auto;
+  padding-bottom: 90px;
+}
+.profile-content {
+  width: 1024px;
+  display: flex;
+  justify-content: center;
+}
+.left-content {
+  width: 512px;
+}
+.right-content {
+  width: 512px;
+}
+.icon {
+  background-image: url(img/my-icon.jpg);
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+.right-content-item h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.right-content-item:nth-child(2) {
+  padding-top: 20px;
+}
+
+/* Contact */
+.contact-box {
+  width: 800px;
+  padding-bottom: 90px;
+  margin: 0 auto;
+}
+.contact-content {
+  display: flex;
+  justify-content: center;
+}
+.co-left-content,
+.co-right-content {
+  width: 400px;
+  display: flex;
+  justify-content: center;
+}
+.co-left-content h3,
+.co-right-content h3 {
+  margin-bottom: 5px;
+}
+.co-right-content > div > .fa {
+  font-size: 50px;
+}
+.fa-twitter {
+  margin: 0 20px;
 }
